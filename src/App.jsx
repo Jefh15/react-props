@@ -1,5 +1,5 @@
+import Comentario from "./components/Comentario";
 import Saludo from "./components/Saludo";
-
 
 
 function App() {
@@ -11,6 +11,24 @@ function App() {
       <Saludo persona='Jesus' edad={30} />
       <Saludo persona='Aaron' edad={50} />
       <Saludo persona='Erick' edad={80} />
+      <hr />
+      <h3>Cajita de comentarios</h3>
+      <Comentario
+        urlImagen='https://picsum.photos/64'
+        persona='Jesus'
+        texto='ffffffffffffffffffffffff'
+      />
+      <Comentario
+        urlImagen='https://picsum.photos/64'
+        persona='Aaron'
+        texto='dddddddddddddddddddddddd'
+      />
+      <Comentario
+        urlImagen='https://picsum.photos/64'
+        persona='Erick'
+        texto='wwwwwwwwwwwwwwwwwwwwwwww'
+      />
+
     </div>
   );
 }

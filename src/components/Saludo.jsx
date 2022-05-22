@@ -2,14 +2,18 @@ import React from 'react'
 
 
 //(props) ---> recibo los props que viene de otro componente
-const Saludo = (props) => {
+// {propiedad, propiedad}
+const Saludo = ({ persona, edad }) => {
 
-    console.log(props)
+
+    // console.log(props)
+    // console.log(persona);
+    // console.log(edad);
 
     return (
         <div>
-            <h2>Saludando a {props.persona}</h2>
-            <p>Edad: {props.edad}</p>
+            <h2>Saludando a {persona}</h2>
+            <p>Edad: {edad}</p>
         </div>
     )
 }
